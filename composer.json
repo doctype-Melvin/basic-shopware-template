@@ -1,0 +1,18 @@
+{
+  "name": "melvin/new-plugin",
+  "description": "Learning more about Shopware",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "MyNewPlugin\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "MyNewPlugin\\MyNewPlugin",
+    "label": {
+      "de-DE": "Learning more about Shopware",
+      "en-GB": "Learning more about Shopware"
+    }
+  }
+}
