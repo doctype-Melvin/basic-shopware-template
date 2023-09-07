@@ -2,6 +2,7 @@
 
  {% block page_product_detail_tabs_navigation_description %}
   {{ parent() }}
+  {% if page.product.customFields.custom_training_text %} 
     <li class="nav-item">
         <a
             class="nav-link product-detail-tab-navigation-link"
@@ -15,10 +16,13 @@
         Foo
         </a>
     </li>
+    {% endif %}
 {% endblock %}
 
 {% block page_product_detail_tabs_content_description %}
   {{ parent() }}
+    {% if page.product.customFields.custom_training_text %} 
+
     <div class="tab-pane fade show"
             id="my-tab-pane"
             role="tabpanel"
@@ -26,4 +30,5 @@
         {# {% sw_include '@Storefront/storefront/page/product-detail/description.html.twig' %} #}
         {% sw_include '@MyNewPlugin/MyNewPlugin/page/product-detail/my-tab.html.twig' %}
     </div>
+    {% endif %}
 {% endblock %}
