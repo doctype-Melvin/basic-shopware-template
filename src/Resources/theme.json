@@ -18,5 +18,42 @@
   "asset": [
     "@Storefront",
     "app/storefront/src/assets"
-  ]
+  ],
+  "config": {
+    "blocks": {
+      "settings": {
+        "label": {
+          "en-GB": "Color Settiongs",
+          "de-DE": "Farben"
+        }
+      }
+    },
+    "sections": {
+      "overriddenVariables": {
+        "label": {
+          "en-GB": "Overridden Variables",
+          "de-DE": "Überschriebene Variablen"
+        }
+      },
+      "newVariables": {
+        "label": {
+          "en-GB": "New variables",
+          "de-DE": "Neue Variablen"
+        }
+      }
+    },
+    "fields": {
+      "sw-color-brand-primary": {
+        "label": {
+          "en-GB": "Primary color",
+          "de-DE": "Hauptfarbe"
+        },
+        "type": "color",
+        "editable": true,
+        "block": "settings",
+        "section": "overriddenVariables",
+        "value": "#48AB18"
+      }
+    }
+  }
 }
